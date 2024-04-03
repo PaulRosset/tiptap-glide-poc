@@ -49,6 +49,7 @@
     "prosemirror-view": "^1.9.10",
     "y-prosemirror": "^1.2.1",
     "y-protocols": "^1.0.1",
-    "yjs": "^13.5.38"
+    "yjs": "^13.5.38",
+    "pagedjs": "0.4.3"
   }
 }
