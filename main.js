@@ -23,15 +23,15 @@ import Gapcursor from '@tiptap/extension-gapcursor'
 import WCNode from './wc-node.js';
 import { Previewer } from "pagedjs";
 
+const previewer = new Previewer();
+
 const editor = new Editor({
   async onCreate({ editor }) {
-    const previewer = new Previewer();
     await previewer.preview(editor.getHTML(), [], document.querySelector("#preview"))
   },
   async onUpdate({ editor }) {
     // The content has changed;
     console.log(editor)
-    const previewer = new Previewer();
     await previewer.preview(editor.getHTML(), [], document.querySelector("#preview"))
   },
   element: document.querySelector('.element'),
